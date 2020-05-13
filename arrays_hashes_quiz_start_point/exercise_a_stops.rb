@@ -27,7 +27,7 @@ for stop in stops
     end
 end
 
-def finding_falkirk(stops)
+def falkirk_finder(stops)
     for stop in stops
         if stop == "Falkirk High"
             p stop
@@ -35,7 +35,7 @@ def finding_falkirk(stops)
     end
 end
 
-finding_falkirk(stops)
+falkirk_finder(stops)
 #9. Reverse the positions of the stops in the array
 p stops.reverse()
 #10 Print out all the stops using a for loop
