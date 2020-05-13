@@ -64,8 +64,21 @@ p users["Erik"][:lottery_numbers]
 p users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
 p users["Erik"][:lottery_numbers].sort.first
-p users["Erik"][:lottery_numbers].min
+p users["Erik"][:lottery_numbers].min # .min does it directly
 # 6. Return an array of Avril's lottery numbers that are even
+lottery_numbers = users["Avril"][:lottery_numbers] 
+
+def even_numbers(lottery_numbers)
+  for number in lottery_numbers
+    if number % 2 == 0
+      p number
+    end
+  end
+end
+
+even_numbers(lottery_numbers)
+
+p lottery_numbers.select { |number| number.even? } # second approach in 1 line
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "Fluffy"
