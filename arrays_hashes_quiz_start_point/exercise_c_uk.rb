@@ -31,3 +31,11 @@ for country in united_kingdom
   p country[:name]
 end
 # 4. Use a loop to find the total population of the UK.
+total_population = 0
+
+for country in united_kingdom
+  total_population += country[:population]
+end
+
+p total_population 
+
