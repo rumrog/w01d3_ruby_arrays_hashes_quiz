@@ -35,7 +35,7 @@ total_population = 0
 
 for country in united_kingdom
   total_population += country[:population]
-end
+end 
 
-p total_population 
+p total_population # prints total_population in one integer
 
