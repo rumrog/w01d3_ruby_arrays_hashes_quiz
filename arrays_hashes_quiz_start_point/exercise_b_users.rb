@@ -78,7 +78,7 @@ end
 
 even_numbers(lottery_numbers)
 
-p lottery_numbers.select { |number| number.even? } # second approach in 1 line
+p lottery_numbers.select { |number| number.even? } # second approach in 1 line with .select and .even?
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 p users["Erik"][:lottery_numbers].push(7)
 # 8. Change Erik's hometown to Edinburgh
