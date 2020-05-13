@@ -19,7 +19,7 @@ p stops[2]
 p stops.at(2)
 p stops.fetch(2)
 p stops.slice(2)
-p stops.sample
+p stops.sample()
 
 for stop in stops
     if stop == "Falkirk High"
@@ -37,7 +37,7 @@ end
 
 finding_falkirk(stops)
 #9. Reverse the positions of the stops in the array
-
+p stops.reverse()
 #10 Print out all the stops using a for loop
 
 p stops
